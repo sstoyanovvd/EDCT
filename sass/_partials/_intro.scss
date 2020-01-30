@@ -1,0 +1,126 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.section-intro {
+	background: #FDF0E9;
+	padding-top: 6.8rem;
+	padding-bottom: 9.4rem;
+
+	.shell {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media(max-width:$responsive-sm) {
+			flex-direction: column;
+		}	/* 1023px */
+
+	}
+
+	.section__content {
+		width: 40%;
+		margin-top: 1.88rem;
+
+		@media(max-width:$responsive-sm) {
+			margin-bottom: 50px;
+			width: 90%;
+			text-align: center;
+		}	/* 1023px */
+		
+		@media(max-width:$responsive-xxs) {
+			margin-bottom: 50px;
+			width: 90%;
+			text-align: left;
+		}	/* 479px */
+
+		h1 {
+			@media(max-width:$responsive-xxs) {
+				font-size: 3.5rem;
+				line-height: 4rem; 
+			}	/* 479px */
+		}
+
+		.section__body {
+			margin-top: 0.62rem;
+			margin-bottom: 2.4rem;
+		}
+
+		.section__actions {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 370px;
+
+		@media(max-width:$responsive-sm) {
+			margin: auto;
+		}	/* 1023px */
+
+		@media(max-width:$responsive-xxs) {
+			justify-content: flex-start;
+			margin: 0;
+		}	/* 479px */
+
+		.btn {
+			@media(max-width:$responsive-xxs) {
+				margin-right: 3%;
+			}	/* 479px */
+		}
+		}
+	}
+
+	.section__images {
+		width: 59%;
+		position: relative;
+		margin-right: -11%;
+
+		@media(max-width:$responsive-sm) {
+			margin-right: 0;
+		}	/* 1023px */
+
+		@media(max-width:$responsive-xxs) {
+			left: -15%;
+		}	/* 479px */
+
+		& img:first-child {
+			position: absolute;
+			top: 30.6%;
+			left: -18.6%;
+		}
+
+		& img:nth-child(2) {
+			position: absolute;
+			top: -10%;
+			left: -11.5%;
+			z-index: 3;
+		}
+
+		& img:nth-child(3) {
+			z-index: 2;
+			position: relative;
+		}
+
+		& img:nth-child(4) {
+			position: absolute;
+			left: 38%;
+			top: 0.4%;
+			z-index: 1; 
+		}
+
+		& img:nth-child(5) {
+			position: absolute;
+			top: 86.2%;
+			left: 39.3%;
+			z-index: 0
+		}
+		& img:last-child {
+			position: absolute;
+			top: 35.5%;
+			left: 40.6%;
+			z-index: 2;
+		}
+		
+	}
+
+	
+}

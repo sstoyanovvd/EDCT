@@ -1,0 +1,75 @@
+/* ------------------------------------------------------------ *\
+	List
+\* ------------------------------------------------------------ */
+
+.list-advantages {
+	list-style: none;
+	position: relative;
+
+
+	li {
+		color: #707070;
+		line-height: 2rem;
+
+		&:first-child {
+			margin-bottom: 0.94rem;
+
+			&:before {
+				position: absolute;
+				content:('');
+				width: 16px;
+				height: 10px;
+				display: inline-block;
+				border: 8px solid transparent;
+				border-left: 10px solid #F28A4B;
+				left: -1.44rem;
+				top: 0.38rem;
+			}
+		}
+
+		&:nth-child(2) {
+			margin-bottom: 0.94rem;
+
+			&:before {
+				position: absolute;
+				content:('');
+				width: 16px;
+				height: 10px;
+				display: inline-block;
+				border: 8px solid transparent;
+				border-left: 10px solid #FACE55;
+				left: -1.44rem;
+				top: 3.44rem;
+			}
+		}
+
+		&:last-child {
+			&:before {
+				position: absolute;
+				content:('');
+				width: 16px;
+				height: 10px;
+				display: inline-block;
+				border: 8px solid transparent;
+				border-left: 10px solid #F1A4E5;
+				left: -1.44rem;
+				top: 6.38rem;
+			}
+		}
+	}
+}
+
+.list-logos {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+
+	li {
+		margin-bottom: 5%;
+	}
+
+	@media(max-width:$responsive-xs) {
+		flex-direction: column;
+	}	/* 767px */
+}

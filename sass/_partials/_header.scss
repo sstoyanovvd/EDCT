@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	background: transparent;
+	padding-top: 1rem;
+	padding-bottom: 2.63rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	.shell {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.header-fixed {
+	background: #FDF0E9;
+	padding: 1rem 0;
+	transition: .6s;
+}
+

@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+.section-callout {
+	text-align: center;
+	background: #6483F6;
+	padding-bottom: 8rem; 
+	padding-top: 8.7rem;
+
+	.section__body {
+		margin: 0 auto;
+		width: 66%;
+		color: #fff;
+		margin-bottom: 2.25rem;
+
+		h2 {
+			margin-bottom: 1rem;
+
+			@media(max-width:$responsive-xxs) {
+				font-size: 2.5rem; 
+				line-height: 3rem;
+			}	/* 479px */
+		}
+
+		p {
+			line-height: 2rem;
+		}
+	}
+
+	.section__actions {
+		display: flex;
+		justify-content: center;
+
+		.btn--transparent-white {
+			margin-left: 20px;
+		}
+
+		@media(max-width:$responsive-md) {
+			white-space: nowrap;
+			
+		}	/* 1200px */
+	}
+}

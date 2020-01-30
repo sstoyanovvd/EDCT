@@ -1,0 +1,177 @@
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	appearance: none;
+	font-size: 1.13rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+	padding: 0.75rem 2.13rem;
+	background: #F07867;
+	border-radius: 8px; 
+
+	@media(max-width:$responsive-xxs) {
+		padding: 0.75rem 1.75rem;
+		white-space: nowrap;
+	}	/* 479px */
+
+	&:hover {
+		background:#EEA1E2;
+		text-decoration: none;
+		color: #000;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+
+	&-block {
+		display: block;
+		width: 100%;
+	}
+
+	&--transparent {
+		background: transparent;
+		color: #707070;
+		border: 1px solid #E8CD9C;
+		padding: 0.75rem 2.25rem;
+		display: inline-block;
+
+		@media(max-width:$responsive-xxs) {
+		padding: 0.75rem 1.94rem;
+	}	/* 479px */
+
+		&:hover {
+			background:#FACE55;
+			text-decoration: none;
+			color: #000;
+		}
+
+		&-white {
+			background: transparent;
+			border: 1px solid #92A8F9;
+			display: inline-block;
+			padding: 0.71rem 3.06rem;
+
+			&:hover {
+			background:#FACE55;
+			text-decoration: none;
+			color: #000;
+			}
+		}
+
+		&-grey {
+			border: 1px solid #6F6F6F;
+			background: transparent;
+			display: inline-block;
+			padding: 0.75rem 3.06rem;
+
+			&:hover {
+			background:#FACE55;
+			text-decoration: none;
+			color: #000;
+			}
+		}
+
+		&-red {
+			border: 1px solid #F07867;
+			background: transparent;
+			padding: 0.75rem 3rem;
+			color: #707070;
+			display: inline-block;
+
+			&:hover {
+			background:#FACE55;
+			text-decoration: none;
+			color: #000;
+			border: 1px solid #FACE55;
+			}
+		}
+	}
+
+	&--blue {
+		background: #6483F6;
+	}
+
+	&--explore {
+		padding: 0.75rem 3.25rem;
+	}
+
+	&--courses {
+		padding: 0.75rem 1.63rem;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+		Button Menu
+\* ------------------------------------------------------------ */
+
+.btn-menu {
+	position: relative;
+	z-index: 50;
+	display: none;
+	vertical-align: middle;
+	width: 27px;
+	height: 19px;
+	transform: rotate(0deg);
+
+	@media(max-width:$responsive-xs) {
+		display: block;
+		position: absolute;
+		right: 5%;
+	}	/* 767px */
+
+	span {
+		position: absolute;
+		left: 0;
+		display: block;
+		height: 3px;
+		width: 100%;
+		background: #F07867;
+		opacity: 1;
+		transform: rotate(0deg);
+		font-size: 0;
+		line-height: 0;
+		text-indent: -4004px;
+		transition: 0.4s ease-in-out;
+		border-radius: 3px;
+
+		&:nth-child(1) {
+			top: 0px;
+		}
+
+		&:nth-child(2) {
+			top: 7px;
+		}
+
+		&:nth-child(3) {
+			top: 14px;
+		}
+	}
+
+	&.open {
+		span {
+			background: $black;
+
+			&:nth-child(1) {
+				top: 8px;
+				transform: rotate(135deg);
+			}
+
+			&:nth-child(2) {
+				left: -60px;
+				opacity: 0;
+			}
+
+			&:nth-child(3) {
+				top: 8px;
+				transform: rotate(-135deg);
+			}
+		}
+	}
+}
